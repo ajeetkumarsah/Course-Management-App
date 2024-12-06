@@ -1,5 +1,11 @@
 ## Course Management App
 
+
+https://github.com/user-attachments/assets/1cc23d06-84da-4021-971d-e2cb801298ac
+
+
+
+
 Welcome to the Course Management App! This Flutter application allows users to view courses, search for specific courses, and manage user data. Below you'll find instructions to set up and run the app on your local machine.
 
 ---
