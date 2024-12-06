@@ -1,3 +1,120 @@
+## Course Management App
+
+Welcome to the Course Management App! This Flutter application allows users to view courses, search for specific courses, and manage user data. Below you'll find instructions to set up and run the app on your local machine.
+
+---
+
+### Prerequisites
+
+Before setting up the project, ensure you have the following installed:
+
+1. **Flutter**: Install [Flutter SDK](https://flutter.dev/docs/get-started/install) for your platform (macOS, Windows, or Linux).
+   
+   After installation, verify by running:
+
+   ```bash
+   flutter doctor
+   ```
+
+2. **Dart SDK**: The Dart SDK comes with Flutter, but ensure it's installed.
+   
+3. **Android Studio/VS Code**: Choose a code editor:
+   - [Android Studio](https://developer.android.com/studio) or
+   - [VS Code](https://code.visualstudio.com/) (with Flutter plugin)
+
+4. **Xcode (macOS only)**: For iOS development, install Xcode from the [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
+
+5. **Firebase** (if using Firebase for backend services):
+   - Set up a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Add `google-services.json` (Android) or `GoogleService-Info.plist` (iOS).
+
+---
+
+### Setup Instructions
+
+1. **Clone the Repository**
+
+   First, clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/ajeetkumarsah/Course-Management-App.git
+   cd Course-Management-App
+   ```
+
+2. **Install Dependencies**
+
+   Run the following command to install all necessary dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Set Up Firebase (if applicable)**
+
+   - For **Android**: Download the `google-services.json` from Firebase Console and place it in the `android/app/` directory.
+   - For **iOS**: Download the `GoogleService-Info.plist` from Firebase Console and place it in the `ios/Runner/` directory.
+
+4. **Run the Application**
+
+   To run the app on your local device or emulator, execute:
+
+   ```bash
+   flutter run
+   ```
+
+   - For **iOS (macOS only)**, ensure you have a valid Xcode setup and run:
+
+     ```bash
+     flutter run
+     ```
+
+---
+
+### Running Tests
+
+To run unit tests for the app, use the following command:
+
+```bash
+flutter test
+```
+
+This will execute all test files located in the `test/` directory.
+
+---
+
+### Build Instructions
+
+If you want to build the app for production or release:
+
+- **For Android (APK)**:
+
+  ```bash
+  flutter build apk
+  ```
+
+- **For iOS**:
+
+  ```bash
+  flutter build ios
+  ```
+
+---
+
+### Troubleshooting
+
+1. **Flutter Doctor**: If you encounter issues, run `flutter doctor` to check your environment.
+   
+2. **Clear Cache**: Sometimes, clearing the Flutter build cache can help:
+
+   ```bash
+   flutter clean
+   flutter pub get
+   ```
+
+3. **Check Dependencies**: If you face issues with specific dependencies (like Firebase), make sure you've set up the platform-specific configurations correctly.
+
+
+
 ### **How Provider was Used for State Management**
 
 Provider was used as the state management solution to handle the application’s state efficiently. Below is a breakdown of its use:
