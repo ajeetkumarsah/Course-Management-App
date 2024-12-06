@@ -3,7 +3,7 @@ import 'package:course_management_app/models/course.dart';
 import 'package:course_management_app/services/api_service.dart';
 
 class CourseProvider with ChangeNotifier {
-  final ApiService _apiService = ApiService();
+   ApiService _apiService = ApiService();
   final List<CourseModel> _courses = [];
   List<CourseModel> _searchResults = [];
   bool _isLoading = false;
@@ -17,6 +17,13 @@ class CourseProvider with ChangeNotifier {
   bool get isLoading => _isLoading;
   bool get hasMore => _hasMore;
   String? get errorMessage => _errorMessage;
+
+
+ // Public setter to allow for dependency injection (only for testing purposes)
+  set apiService(ApiService apiService) {
+    _apiService = apiService;
+  }
+
   Future<void> fetchCourses() async {
     if (_isLoading || !_hasMore) return;
 
